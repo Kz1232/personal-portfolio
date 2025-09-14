@@ -1,0 +1,56 @@
+@layer utilities{
+    @keyframes loading{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translate(250%);
+        }
+    }
+.animate-loading-bar{
+    animation:loading 0.8s ease infinite;
+}
+
+@keyframes blink{
+    0% , 100%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink{
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.animate-gradient {
+  background-size:200% 200%;
+  background-position:0% 50%;
+  animation: gradient-move 3s linear infinite;
+}
+
+
+
+}
+
+.reveal{
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease , transform 0.8s ease ;
+
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform:  translateY(0);
+}
