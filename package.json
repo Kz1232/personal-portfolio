@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage":"https://kz1232.github.io/personal-portfolio",
+  "homepage": "https://kz1232.github.io/personal-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeloy":"npm run build",
-    "deploy":"gh-pages -d dist"
-
+    "predeloy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
