@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [tailwindcss(),
     react()],
-  base:"/personal-portfolio"
+  base:process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
 })
