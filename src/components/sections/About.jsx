@@ -1,7 +1,16 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 const frontendSkills = ["Html", "Css", "Js", "React", "Next-js"];
-const backendSkills = ["Python", "AWS core service", "MS-SQL","Postgresql", "Django"];
+const backendSkills = [
+  "Python",
+  "AWS core service",
+  "MS-SQL",
+  "Postgresql",
+  "Django",
+  "FastAPI",
+  "Redis",
+  "Celery",
+];
 export const About = () => {
   return (
     <section
@@ -15,8 +24,11 @@ export const About = () => {
           </h1>
           <div className=" p-8 rounded-xl border border-white/10 transition-all hover:-translate-y-1 ">
             <p className="text-gray-400 mb-6 ">
-              I am a final sem Computer Engineering student at my internship period of academia and actively searching for the corrsponding roles.
-              I would also like to call myself a passionate developer building a intuitive,user-friendly , scalable web apps and learning new tech on daily basis with consistent mindset
+              I am a final sem Computer Engineering student currently doing my
+              internship and actively searching for the corrsponding roles. I
+              would also like to call myself a passionate developer building a
+              intuitive,user-friendly , scalable web apps and learning new tech
+              on daily basis with consistent mindset.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="rounded-xl p-6 transition-all hover:-translate-y-1">
@@ -25,7 +37,7 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className=" px-3 py-1 rounded-full text-blue-500 bg-blue-500/10 transition hover:bg-blue-500/20 hover:shadow-[0_2px_10px_rgba(59,130,240,0.2)]"
+                      className=" px-3 py-1 rounded-full  bg-blue-500/10 transition hover:bg-blue-500/20 hover:shadow-[0_2px_10px_rgba(59,130,240,0.2)]"
                     >
                       {tech}
                     </span>
@@ -38,7 +50,7 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className=" px-3 py-1 rounded-full bg-blue-500/10 transition hover:bg-blue-500/20 hover:shadow-[0_2px_10px_rgba(59,130,240,0.2)]"
+                      className=" px-3 py-1 rounded-full text-blue-500 bg-blue-500/10 transition hover:bg-blue-500/20 hover:shadow-[0_2px_10px_rgba(59,130,240,0.2)]"
                     >
                       {tech}
                     </span>
@@ -66,20 +78,22 @@ export const About = () => {
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold">
-                    Developer at AWS CLOUD CLUB at TU (2025 - current)
-                  </h4>
-                  <p>
-                    Contributing as a developer for the official webiste of AWS CLOUD CLUB at TU for the year 2025
-                  </p>
-                </div>
-                <div className="hidden">
-                  <h4 className="font-semibold">
-                    Software intern at Leapfrog (2022)
+                  <h4 className="font-semibold text-blue-500 ">
+                    Backend Developer intern at NAXA (2082 Magh - current )
                   </h4>
                   <p>
                     Assisted in building front-end componenets to the senior
                     developer
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-blue-500 ">
+                    Developer at AWS CLOUD CLUB at TU (2082 Bhadra - 2082 Poush)
+                  </h4>
+                  <p>
+                    Contributing as a developer for the official webiste of AWS
+                    CLOUD CLUB at TU for the year 2025
                   </p>
                 </div>
               </div>

@@ -17,6 +17,60 @@ export const Projects = () => {
                     hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] space-y-4 transition
                     "
             >
+              <h4 className="font-semibold">
+                Intern Management System(Backend)
+              </h4>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  Implemented basic level Role Based Access Control
+                  (RBAC)between intern and Mentee.
+                </li>
+                <li>Implemented JWT Authentication using SimpleJWT. </li>
+                <li>
+                  Implemented filtering ,searching and ordering using django
+                  build in backends.
+                </li>
+                <li>
+                  Implemented drf_yasg to automate the creation of
+                  Swagger/OpenAPI 2.0 docs for DRF APIs.{" "}
+                </li>
+                <li>
+                  Implemented soft delete using two object manager in same model
+                </li>
+              </ul>
+              <div className="space-x-2 flex flex-wrap">
+                {["Django", "Sqlite3", "Django-Rest", "SimpleJWT"].map(
+                  (tech, key) => (
+                    <span
+                      key={key}
+                      className="px-3 py-1 rounded-xl text-blue-500 bg-blue-500/10 transition-all hover:-translate-y-1 hover:bg-blue-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ),
+                )}
+              </div>
+              <div className="flex justify-between items-center">
+                <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 hidden transition-colors my-4"
+                >
+                  View Projects
+                </a>
+                <a
+                  href="https://github.com/Kz1232/Intern-Management-System"
+                  className="text-blue-400 hover:text-blue-300  transition-colors my-4 "
+                >
+                  Github Repo
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="p-8 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 
+                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] space-y-4 transition
+                    "
+            >
               <h4 className="font-semibold">Room Rental Management System</h4>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
@@ -40,7 +94,7 @@ export const Projects = () => {
                     >
                       {tech}
                     </span>
-                  )
+                  ),
                 )}
               </div>
               <div className="flex justify-between items-center">
@@ -159,20 +213,18 @@ export const Projects = () => {
                     "
             >
               <h4 className="font-semibold">Product Landing Page</h4>
-              <p>The trumphet selling store's  productlanding page</p>
+              <p>The trumphet selling store's productlanding page</p>
               <div className="space-x-2 flex flex-wrap">
-                {["Html5", "CSS3", "Javascript"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="px-3 py-1 rounded-xl text-blue-500 bg-blue-500/10 transition-all hover:-translate-y-1 hover:bg-blue-500/30
+                {["Html5", "CSS3", "Javascript"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="px-3 py-1 rounded-xl text-blue-500 bg-blue-500/10 transition-all hover:-translate-y-1 hover:bg-blue-500/30
                     
                     "
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
               <div className="flex justify-between items-center">
                 <a
